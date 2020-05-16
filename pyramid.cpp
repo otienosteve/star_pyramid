@@ -5,10 +5,16 @@
 
 int main()
          {
-	int count, n2,n,changer=10, changer2=1; //declaring variables to be uses in our program
+	int count, n2,n,changer, changer2=1,row_calc, inverse; //declaring variables to be uses in our program
+	
+	
+	printf("How many rows of pyramid of stars would you like to see?");
+	scanf("%d",&row_calc);
+	
+	changer=row_calc;
 	
 	//beginning of outer loop
-	for (count=1; count<=10; count++)
+	for (count=1; count<=row_calc; count++)
 	{  
 	// beginning of inner loop that prints the space identation
 		for( n=changer; n>=1; n--) {
@@ -28,7 +34,7 @@ int main()
 		changer--;
 		changer2++;
 	}
-		printf("Above is a pyramid of  indented Stars");
+		printf("Above is a %d row pyramid of indented Stars",row_calc );
 	}
 	
 
